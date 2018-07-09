@@ -1,0 +1,4 @@
+1)install react on machine globally
+
+npm i -g create-react-app
+
