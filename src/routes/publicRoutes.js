@@ -1,9 +1,10 @@
 import * as routesConstants from "./routeConstants";
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import aboutComponent from '../components/aboutComponent'
-import contactComponent from '../components/contactComponent'
-import homeComponent from '../components/homeComponent'
+import AboutComponent from '../components/About/AboutComponent'
+import ContactComponent from '../components/Contact/ContactComponent'
+import HomeComponent from '../components/Home/HomeComponent'
+import PlayersComponent from "../components/Players/PlayersComponent";
 
 // The Public Route component renders one of the three provided
 // Routes (provided that one matches). 
@@ -12,10 +13,11 @@ import homeComponent from '../components/homeComponent'
 const MainRoute = () => (
     <main>
         <Switch>
-            <Route exact path='/' component={homeComponent} />
-            <Route exact path={routesConstants.HOME_PAGE} component={homeComponent} />
-            <Route path={routesConstants.ABOUT_PAGE} component={aboutComponent} />
-            <Route path={routesConstants.CONTACT_PAGE} component={contactComponent} />
+            <Route exact path='/' component={HomeComponent} />
+            <Route exact path={routesConstants.HOME_PAGE} component={HomeComponent} />
+            <Route path={routesConstants.ABOUT_PAGE} component={AboutComponent} />
+            <Route path={routesConstants.CONTACT_PAGE} component={ContactComponent} />
+            <Route path={routesConstants.PLAYERS_PAGE} component={PlayersComponent} />
         </Switch>
     </main>
 )

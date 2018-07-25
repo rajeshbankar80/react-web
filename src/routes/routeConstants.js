@@ -3,3 +3,4 @@
 export const HOME_PAGE = "/home";
 export const ABOUT_PAGE = "/about";
 export const CONTACT_PAGE = "/contact";
+export const PLAYERS_PAGE = "/players";
